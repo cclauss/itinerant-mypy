@@ -72,7 +72,7 @@ before_script:
   - cd ~/${REPO}
 script:
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time mypy
+  - time mypy .
 notifications:
   on_success: change
   on_failure: change  # `always` will be the setting once code changes slow down
